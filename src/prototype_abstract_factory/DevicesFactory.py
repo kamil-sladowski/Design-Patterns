@@ -7,7 +7,6 @@ class DevicesFactory:
 
     def __init__(self):
         self.factory = RobotsFactory()
-        # robot_a_copy = self.factory.cloneRobotA()
 
     def createProduct(self, product_type):
         if product_type == TV.__name__:
