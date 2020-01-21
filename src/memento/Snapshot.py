@@ -1,9 +1,10 @@
 
 class Snapshot:
 
-    def __init__(self, editor, text):
-        self.editor = editor
-        self.text = text
+    def __init__(self, player, position):
+        self.player = player
+        self.x = position[0]
+        self.y = position[1]
 
     def restore(self):
-        self.editor.setText(self.text)
+        self.player.setPosition([self.x, self.y])
